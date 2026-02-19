@@ -20,7 +20,7 @@ export default function Home() {
   const [newRoom, setNewRoom] = useState({ roomNo: "", capacity: 1, hasAC: false, hasAttachedWashroom: false });
   const [searchParams, setSearchParams] = useState({ students: 1, needsAC: false, needsWashroom: false });
 
-  const API_BASE_URL = "https://smart-hostel-room-allocation-system.onrender.com"; 
+  const API_BASE_URL = "https://smart-hostel-room-allocation-system.onrender.com/api/rooms";
 
   const fetchRooms = async () => {
     try {
