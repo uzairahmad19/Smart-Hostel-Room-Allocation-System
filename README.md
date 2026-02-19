@@ -3,8 +3,8 @@
 This repository contains the complete source code for the Smart Hostel Room Allocation System. The application allows users to manage hostel rooms and automatically allocates the most optimal room to students based on specific facility requirements and capacity constraints.
 
 ## 🚀 Live Links & Deliverables
-* **Frontend Deployment (Vercel):** []
-* **Backend API (Render):** []
+* **Frontend Deployment (Vercel):** [https://smart-hostel-room-allocation-system-taupe.vercel.app/]
+* **Backend API (Render):** [https://smart-hostel-room-allocation-system.onrender.com]
 * **2-Minute Demo Video:** []
 
 ## 🛠️ Technology Stack
