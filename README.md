@@ -5,8 +5,6 @@ This repository contains the complete source code for the Smart Hostel Room Allo
 ## 🚀 Live Links & Deliverables
 * **Frontend Deployment (Vercel):** [https://smart-hostel-room-allocation-system-taupe.vercel.app/]
 * **Backend API (Render):** [https://smart-hostel-room-allocation-system.onrender.com]
-* **2-Minute Demo Video:** []
-
 ## 🛠️ Technology Stack
 * **Frontend:** Next.js (App Router), TypeScript, Tailwind CSS, Lucide-React.
 * **Backend:** Java 17+, Spring Boot 3, Spring Web, Spring Data JPA, Lombok.
