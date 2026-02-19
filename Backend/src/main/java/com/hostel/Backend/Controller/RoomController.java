@@ -3,6 +3,7 @@ package com.hostel.Backend.Controller;
 import com.hostel.Backend.Model.Room;
 import com.hostel.Backend.Repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,8 +20,15 @@ public class RoomController {
 
     // Add Room
     @PostMapping
-    public Room addRoom(@RequestBody Room room) {
-        return roomRepository.save(room);
+    public ResponseEntity<?> addRoom(@RequestBody Room room) {
+        // Check if the room number already exists
+        if (roomRepository.existsById(room.getRoomNo())) {
+            return ResponseEntity.status(HttpStatus.CONFLICT)
+                    .body(Collections.singletonMap("error", "Room already added"));
+        }
+
+        Room savedRoom = roomRepository.save(room);
+        return ResponseEntity.status(HttpStatus.CREATED).body(savedRoom);
     }
 
     // View All Rooms
